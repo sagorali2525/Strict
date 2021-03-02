@@ -1,0 +1,552 @@
+/* =====================================
+    Template Name: Minimo || HTML Template
+    Author: md sagor ali 
+    Version: 1 0.0
+    Created: 24 January 2021
+    File Description: Main Css file of the template   
+
+========================================*/
+
+/*=======================================
+    01.General
+      
+    
+========================================*/
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap'); 
+body{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #2d3950;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    margin: 0 auto;
+
+}
+p{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+a{
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: rgb(77, 119, 156);
+  font-family: 'Lato', sans-serif;
+  text-decoration: none;
+
+}
+/* ======================================
+        HEADER STYLE START HERE
+========================================= */
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+header{
+    padding: 30px 0;
+    background-color: #f6f9f9;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu nav ul li{
+    display: inline-block;
+}
+.menu nav ul li a{
+    font-weight: 600;
+    padding: 0 20px;
+    font-size: 16px;
+    color: #2d3950;
+    text-transform: uppercase;
+
+}
+.menu nav ul li a:hover{
+    color: #15a4fa;
+    transition: 0.3s all ease-in-out;
+}
+/* ======================================
+        HEADER STYLE END HERE
+========================================= */
+
+
+/* ======================================
+        BANNER STYLE START HERE
+========================================= */
+#banner{
+    background-image: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.banner-content h2{
+    font-size: 120px;
+    line-height: 125px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+.banner-content span{
+    display: block;
+    border-bottom: 2px solid #15a4fa;
+    width: 60%;
+    margin: 0 auto;
+}
+.banner-content p{
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    padding: 40px 0 70px;
+}
+.banner-content button{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: uppercase;
+    padding: 20px 15px;
+    border: 1px solid #15a4fa;
+    background-color: transparent;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+.banner-content button::after{
+    content: '';
+    position: absolute;
+    background-color: #15a4fa;
+    height: 0;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    z-index: -1;
+    transition: .2s;
+    color: #2b364b;
+}
+.banner-content button:hover::after{
+   height: 100%;
+   border: 1px solid #15a4fa;
+}
+.banner-content button:hover{
+    background-color:#15a4fa;
+    transition: 0.3s all ease-in-out;
+
+}
+.scroll-icon a{
+    color:#fff;
+    font-size: 50px;
+    position: relative;
+    top: 160px;
+    animation-name: move;
+    animation-duration: 1.8s;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes move{
+0%   {top:0px;}
+
+100%  {top:160px;}
+}
+/* ======================================
+        BANNER STYLE END HERE
+========================================= */
+
+
+
+#service{
+    background-color: #f6f9f9;
+    padding: 70px 0;
+}
+.container{
+    width: 80%;
+ 
+}
+h2{
+    font-size: 40px;
+    color: #2d3950;
+    font-weight: 400;
+    margin-bottom: 20px;
+    /* border-bottom: 1px solid #15a4fa; */
+    padding-bottom: 25px;
+    margin: 0 205px;
+    text-align: center;
+    margin: 0;
+    
+}
+.service h2{
+    text-align: center;
+}
+p{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    color: #999999;
+    text-transform: lowercase;
+    text-transform: none;
+    text-align: center;
+   
+
+}
+
+
+
+
+/* ======================================
+        SERVICES STYLE START HERE
+========================================= */
+#services{
+    background-color: #ffffff;
+    padding: 70px 0;
+}
+.service-container{
+    display: flex;
+    justify-content: space-between;
+}
+.service-item{
+    width: 30%;
+    text-align: center;
+}
+.service-icon span{
+    font-size: 50px;
+    color: #fff;
+    line-height: 100px;
+    display: block;
+    height: 100px;
+    width: 100px;
+    margin: auto;
+     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#48baff+0,48baff+50,5fc3ff+50,5fc3ff+100,48baff+100,48baff+100 */
+     background: #48baff; /* Old browsers */
+     background: -moz-linear-gradient(left,  #48baff 0%, #48baff 50%, #5fc3ff 50%, #5fc3ff 100%, #48baff 100%, #48baff 100%); /* FF3.6-15 */
+     background: -webkit-linear-gradient(left,  #48baff 0%,#48baff 50%,#5fc3ff 50%,#5fc3ff 100%,#48baff 100%,#48baff 100%); /* Chrome10-25,Safari5.1-6 */
+     background: linear-gradient(to right,  #48baff 0%,#48baff 50%,#5fc3ff 50%,#5fc3ff 100%,#48baff 100%,#48baff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48baff', endColorstr='#48baff',GradientType=1 ); /* IE6-9 */
+
+}
+
+.service-content h4{
+    font-size: 22px;
+    line-height: 20px;
+    color: #2d3950;
+    padding: 15px;
+}
+.service-content p{
+    font-size: 15px;
+    line-height: 20px;
+    margin: 0;
+    color: #999999;
+
+}
+/* ======================================
+        SERVICES END START HERE
+========================================= */
+
+/* ======================================
+        GALLERY START HERE
+========================================= */
+#gallery{
+    padding: 70px 0;
+    background-color: #f6f9f9;
+}
+.heading{
+    text-align: center;
+}
+.heading h2{
+    font-size: 40px;
+    font-weight: 400;
+    color: #2d3950;
+    padding: 0;
+}
+.heading p{
+    font-size: 20px;
+    font-weight: 400;
+    color: #999999;
+    padding:25px 0;}
+.thumnbnail img{
+    width: 100%;
+}
+.gallery{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+.gallery-item{
+    width: 30%;
+    position: relative;
+    cursor: pointer;
+}
+.gallery-item:hover .thumnbnail::after{
+    height: 100%;
+    transition-duration: .3s;
+}
+.thumnbnail::after{
+    content: '';
+    background-color:#15a4fad6 ;
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;   
+}
+.gallery-item:hover .gallery-icon{
+    top: 50%;
+    transition-duration: .5s;
+    opacity: 1;
+}
+.gallery-icon{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    opacity: 0;
+}
+.gallery-icon ul{
+    display: flex;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.gallery-icon ul li{
+    list-style: none;
+    text-align: center;
+    height: 43px;
+    width: 43px;
+    line-height: 43px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    margin: 0 15px;
+    color:#fff;
+}
+/* ======================================
+        GALLERY END HERE
+========================================= */
+
+/* ======================================
+        CONTACT START HERE
+========================================= */
+
+#contact-us{
+    padding: 70px 0;
+    background-image: url(../images/form.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+#contact-us::after{
+    content: '';
+    position: absolute;
+    background-color: #2a354aed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;  
+}
+.contact h2{
+    color: #fff;
+}
+.contact p{
+    color: #999;
+}
+.contact-form{
+width: 550px;
+margin: 0 auto;
+box-sizing: border-box;
+}
+.contact-form input{
+    width: 500px;
+    height: 45px;
+    margin: 10px 0;
+    padding: 0 20px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    background-color: transparent;
+}
+.contact-form textarea{
+    width: 500px;
+    margin: 10px 0;
+    padding: 0 20px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    background-color: transparent;
+}
+.contact-form input:focus{
+    outline: 0;
+    border-color: #15a4fa;
+    transition: .3s;
+}
+.contact-form textarea:focus{
+    outline: 0;
+    border-color: #15a4fa;
+    transition: .3s;
+}
+.contact-form input::placeholder{
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 400;
+    color: #999;
+    text-transform: capitalize;
+}
+.contact-form textarea::placeholder{
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 400;
+    color: #999;
+    text-transform: capitalize;
+}
+.form-submit ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+}
+.form-submit ul li:first-child{
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+
+}
+.form-submit label{
+    font-size: 15px;
+    color: #fff;
+    font-weight: 400;
+    padding-left: 10px;
+}
+.contact-form input[type=checkbox]{
+    width: 20px;
+    height: 20px;
+    margin: 10px 0;
+    padding: 0 20px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    background-color: transparent;
+}
+.form-submit button{
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+    width: 140px;
+    height: 45px;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 1px solid#15a4fa ;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+  }
+  .form-submit button::after{
+    content:'';
+    position: absolute;
+    background-color: #15a4fa;
+    height: 0;
+    width:100%;
+    top: -1px;
+    left:-1px;
+    border-radius: 5px;
+    z-index: -1;
+    transition: .2s;
+    color: #2b364b;
+  }
+  .form-submit button:hover::after{
+    height: 100%;
+    border: 1px solid #15a4fa; 
+  }
+  .form-submit button:hover{
+      
+  }
+  .form-submit button:focus{
+      outline: none;}
+ 
+ 
+ 
+ /* ======================================
+        CONTACT  END HERE
+========================================= */
+
+/* ======================================
+        FOOTER START HERE
+========================================= */
+footer{
+    padding: 20px 0;
+    background-color: #f6f9f9;
+}
+.flex{
+    display: flex;
+}
+
+.copyright{
+    width: 20%;
+    flex: 0 0 auto;
+    padding: 20px 0;
+    padding-top: 35px;
+}
+.copyright p{
+    font-size: 15px;
+    color: #999999;
+}
+
+.social-icon{
+    width: 80%;
+    flex: 0 0 auto;
+    margin-top: 9px;
+}
+.social-icon ul{
+    display: flex;
+    justify-content: flex-end;
+}
+.social-icon ul li{
+    list-style: none;
+    padding: 0 5px;
+}
+.social-icon ul li a{
+   font-size: 20px;
+   background-color: #15a4fa;
+   display: block;
+   width: 40px;
+   height: 40px;
+   line-height: 40px;
+   border: 1px solid #15a4fa;
+   border-radius: 5px;
+   color: #fff;
+   text-align: center;
+}
+
+.social-icon ul li a:hover{
+   color: rgb(140, 50, 167);
+
+}
+
+
+/* ======================================
+        FOOTER END HERE
+========================================= */
